@@ -1,0 +1,20 @@
+spring:
+  config:
+    activate:
+      on-profile: "local"
+app:
+  name: "local-app-service"
+---
+spring:
+  config:
+    activate:
+      on-profile: "dev"
+app:
+  name: "dev-app-service"
+---
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+app:
+  name: "prod-app-service"  
