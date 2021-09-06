@@ -17,7 +17,7 @@ spring:
 server:
   port: 8101
 app:
-  name: "local-app-service-refresh"  
+  name: "local-app-service-refresh-changed"  
 ---
 spring:
   config:
