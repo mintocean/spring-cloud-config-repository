@@ -11,6 +11,8 @@ spring:
       on-profile: "dev"
 app:
   name: "dev-app-service"
+server:
+  port: 80
 ---
 spring:
   config:
@@ -18,3 +20,5 @@ spring:
       on-profile: "prod"
 app:
   name: "prod-app-service"  
+server:
+  port: 80
