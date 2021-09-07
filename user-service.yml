@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: user-service
   config:
     activate:
       on-profile: "local"
@@ -16,15 +18,11 @@ spring:
         ddl-auto: none
 server:
   port: 8101
-app:
-  name: "actuator refresh"  
 ---
 spring:
   config:
     activate:
       on-profile: "dev"
-app:
-  name: "dev-app-service"
 server:
   port: 80
 ---
@@ -32,7 +30,5 @@ spring:
   config:
     activate:
       on-profile: "prod"
-app:
-  name: "prod-app-service"  
 server:
   port: 80
