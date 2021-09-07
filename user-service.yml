@@ -6,6 +6,8 @@ spring:
       on-profile: "local"
 server:
   port: 8100
+eureka:
+  enabled: false
 ---
 spring:
   config:
