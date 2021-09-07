@@ -4,18 +4,6 @@ spring:
   config:
     activate:
       on-profile: "local"
-  datasource:
-    url: jdbc:mysql://localhost:3306/address?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
-    username: mikelim
-    password: aa4792
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    jpa:
-      database: mysql
-      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-      show-sql: true
-      hibernate:
-        format_sql: true
-        ddl-auto: none
 server:
   port: 8101
 ---
